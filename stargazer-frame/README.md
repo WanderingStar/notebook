@@ -1,4 +1,6 @@
-My [trailer](https://tourtoise.quest) has a really nice big rear window. Unfortunately, the screen/shade for it is kind of janky. It's held in place with a frame made of plastic, and I think is just not up for the Texas heat. Ours has warped so that it no longer stays flush with the window.
+# Tab 400 Stargazer Window Frame
+
+My [trailer](https://tourtoise.quest) has a really nice big rear window. Unfortunately, the screen/shade for it is kind of janky. It's held in place with a frame made of plastic, and I think it is just not up for the Texas heat. Ours has warped so that it no longer stays flush with the window. The RV dealer says they'd have to replace the whole frame, and they'll just put in another plastic frame, which will probably warp too. So I might as well try to modify it myself.
 
 I have a scheme to build an aluminum support out of flat bar stock, rivet the plastic to the support, and then screw the support into the trailer.
 
@@ -11,4 +13,6 @@ Opportunities:
 1. YouTube has videos about bending aluminum
 2. [This one](https://www.youtube.com/watch?v=XU7yLe0s7QM&t=174s) has a guy doing it with a really simple jig
 4. Adrienne just inherited a rivet gun
+
+2023-07-29 [Welded up a really simple jig](pin-bender.md)
 
