@@ -1,5 +1,7 @@
 ### Hardware
 
+2023-07-06
+
 Got a bunch of [parts](Hardware.md) from Adafruit.
 
 Tried to find a good tool to lay out the connections on a protoboard. Tried [KiCad](https://www.kicad.org/) and [Fritzing](https://fritzing.org/) and neither was remotely what I was looking for. I should have just used paper.
@@ -13,6 +15,8 @@ I ended up #soldering it up using an expensive Featherwing #protoboard instead o
 > Find your diagonal flush cutters. Using wire cutters to clip leads is hard and gives bad results.
 
 ### Software
+
+2023-07-08
 
 I started out trying to use the WipperSnapper No-Code platform, but found it frustratingly opaque to debug. Loading Circuit Python turned out to be very difficult... because I was trying to load the binary for an ESP32-S3 not an S2, and it rightly rejected it over and over until I got fed up, wrote a post on the Adafruit forums asking for help, proofread the post, and noticed the S3 🤦🏻.
 
