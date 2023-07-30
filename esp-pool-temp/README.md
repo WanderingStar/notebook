@@ -1,4 +1,6 @@
-I have a pool. I was curious about how warm the water is. I was also curious about DIY Internet of Things.
+# ESP Pool Temperature Sensor
+
+I have a pool. There's been a record-breaking heat wave. I was curious about how warm the water is getting. I was also curious about DIY Internet of Things.
 
 - [Inspiration](https://learn.adafruit.com/iot-pool)
 - [Hardware](Hardware.md)
