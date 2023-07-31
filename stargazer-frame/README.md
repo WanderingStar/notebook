@@ -12,7 +12,8 @@ Problems:
 Opportunities:
 1. YouTube has videos about bending aluminum
 2. [This one](https://www.youtube.com/watch?v=XU7yLe0s7QM&t=174s) has a guy doing it with a really simple jig
-4. Adrienne just inherited a rivet gun
+3. Adrienne just inherited a rivet gun
 
-2023-07-29 [Welded up a really simple jig](pin-bender.md)
+Progress...
+1. [Welded up a really simple jig](2023-07-29%20Pin%20Bender.md)
 

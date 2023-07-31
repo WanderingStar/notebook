@@ -1,4 +1,4 @@
-2023-07-29
+#welding
 
 Inspired by [this video](https://www.youtube.com/watch?v=XU7yLe0s7QM&t=174s), I went down to the [local metal shop](asero.net/) and got some pipe and some rod. I'm not going to get a job as a pipe welder any time soon (maybe because I chose flux core MIG to do the welding, which is probably the worst process for it).
 
