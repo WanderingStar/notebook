@@ -1,11 +1,19 @@
 esphome:
   name: pool-8266
+  # Make sure we don't immediately go back into deep sleep after waking
+  on_boot:
+    - deep_sleep.prevent: nap
 
 esp8266:
   board: huzzah
 
 # Enable logging
 logger:
+
+deep_sleep:
+  id: nap
+  run_duration: 15s
+  sleep_duration: 45s
 
 # Enable Home Assistant API
 api:
@@ -17,6 +25,8 @@ ota:
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_pass
+  fast_connect: true
+  power_save_mode: LIGHT
 
 captive_portal:
 
@@ -35,6 +45,7 @@ sensor:
     name: "Air Temperature"
 
   - platform: adc
+    id: battery_voltage
     name: "Battery Voltage"
     pin: A0
     update_interval: 60s
@@ -43,6 +54,26 @@ sensor:
           # Map 0.0 (from sensor) to 0.0 (true value)
           - 0.0 -> 0.0
           - 0.68 -> 3.7
+    on_value_range:
+      - below: 3.0
+        then:
+          - logger.log: "Critically Low Battery"
+          - output.set_level:
+              id: blue_led
+              level: 20%
+      - above: 3.0
+        below: 4.0
+        then:
+          - logger.log: "Battery Normal"
+          - output.turn_off: red_led
+          - output.set_level:
+              id: blue_led
+              level: 50%
+      - above: 4.0
+        then:
+          - logger.log: "Battery Charging"
+          - output.turn_on: red_led
+
 
 binary_sensor:
   - platform: gpio
@@ -60,3 +91,52 @@ binary_sensor:
       inverted: true
     filters:
       - delayed_on_off: 1s
+
+  - platform: homeassistant
+    id: prevent_deep_sleep
+    name: Prevent Deep Sleep
+    entity_id: input_boolean.prevent_deep_sleep
+
+output:
+  - id: red_led
+    platform: esp8266_pwm
+    pin: GPIO0
+    inverted: True
+
+  - id: blue_led
+    platform: esp8266_pwm
+    pin: GPIO2
+    inverted: True
+
+interval:
+  - interval: 5s
+    then:
+      - output.turn_on: blue_led
+      - delay: .5s
+      - output.turn_off: blue_led
+      - logger.log: "Considering nap"
+      - if:
+          condition:
+            api.connected:
+          else:
+            - logger.log: "No Nap: Not connected to API"
+            - deep_sleep.prevent: nap
+          then:
+            if:
+              condition:
+                binary_sensor.is_off: prevent_deep_sleep
+              else:
+                - logger.log: "No Nap: Prevent Deep Sleep is on"
+                - deep_sleep.prevent: nap
+              then:
+                if:
+                  condition:
+                    sensor.in_range:
+                      id: battery_voltage
+                      below: 4.0
+                  else:
+                    - logger.log: "No Nap: Battery Charging"
+                    - deep_sleep.prevent: nap
+                  then:
+                    - logger.log: "Nap Allowed"
+                    - deep_sleep.allow: nap
