@@ -2,7 +2,7 @@
 
 Interesting... the temperature sensors stopped providing data long before the battery voltage was critically low. They stop providing values when the battery hits 3.5V, though their [datasheet](https://cdn-shop.adafruit.com/datasheets/DS18B20.pdf) says they'll run down to 3.0V.
 
-![[battery-curve.png]]
+![Graph showing the battery smoothly running down to 3.5V and then increasingly quickly. The temperature sensors stop reporting long before the battery dies](battery-curve.png)
 
 Maybe the 3.3V regulated output from the Feather is significantly lower than the battery voltage? At 2.5V, the Feather stopped sending data.
 
