@@ -12,6 +12,6 @@ In theory, the support for this is in [esphome](https://esphome.io/components/se
 ### Enclosure
 Does nobody make a minimal enclosure for a Feather? I can't find one. Maybe everyone but me has a 3D printer and just makes a new one for each project?
 
-The [Polycase KT-35](https://www.polycase.com/kt-35) is pretty close to the right size. Using an edge-mill style bit with my Dremel produced a slot that the USB-C connector fits in, and the fit is tight enough against the screw bosses that the Feather is held in place.
+The [Polycase KT-35](https://www.polycase.com/kt-35) is pretty close to the right size. Using an end-mill style bit with my Dremel produced a slot that the USB-C connector fits in, and the fit is tight enough against the screw bosses that the Feather is held in place.
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/aneel/53080477009/in/album-72177720310129468/" title="Untitled"><img src="https://live.staticflickr.com/65535/53080477009_5df4fae783_w.jpg" width="300" height="400" alt="Untitled"/></a> <a data-flickr-embed="true" href="https://www.flickr.com/photos/aneel/53079713437/in/album-72177720310129468/" title="Untitled"><img src="https://live.staticflickr.com/65535/53079713437_3cda248bba_w.jpg" width="300" height="400" alt="Untitled"/></a> 
