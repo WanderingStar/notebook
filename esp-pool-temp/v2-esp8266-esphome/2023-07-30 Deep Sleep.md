@@ -33,20 +33,13 @@ binary_sensor:
     id: prevent_deep_sleep
     name: Prevent Deep Sleep
     entity_id: input_boolean.prevent_deep_sleep
-    on_state:
-      then:
-        - if:
-            condition:
-              binary_sensor.is_on: prevent_deep_sleep
-            then:
-              - output.turn_on: blue_led
-            else:
-              - output.turn_off: blue_led
 ```
+
+[Inspiration](https://tatham.blog/2021/02/06/esphome-batteries-deep-sleep-and-over-the-air-updates/)
 
 > Lesson Learned: if you put the Feather into a loop where it keeps triggering deep sleep, it's hard to reprogram it. Break the connection between GPIO16 and RST, and it should stop sleeping
 
-Spent a bunch of time trying to figure out how to effectively use deep sleep. The framework is tantalizingly close to supporting a nice event-driven pattern, but I ended up needing to write a linear script instead.
+Spent a bunch of time trying to figure out how to effectively use deep sleep. The framework is tantalizingly close to supporting a nice event-driven pattern, but I just couldn't make it work out and ended up needing to write a linear script instead.
 
 Challenges:
 1. First value read from HA for "Prevent Deep Sleep" toggle (or anything) doesn't trigger the `on_value` or `on_value_range` handlers. They seem to only fire when a value changes while the esphome device is paying attention to it.
@@ -114,3 +107,5 @@ interval:
                     - logger.log: "Nap Allowed"
                     - deep_sleep.allow: nap
 ```
+
+It would be nice use logger to [print out values](https://esphome.io/components/logger.html?highlight=logger#logger-log-action) and collapse the `if`. Another night.
