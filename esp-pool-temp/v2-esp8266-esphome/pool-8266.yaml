@@ -13,11 +13,11 @@ logger:
 deep_sleep:
   id: nap
   run_duration: 15s
-  sleep_duration: 45s
+  sleep_duration: 285s
 
-# Enable Home Assistant API
-api:
-  password: ""
+mqtt:
+  broker: 192.168.86.250
+  log_topic: pool-8266/log
 
 ota:
   password: ""
@@ -39,14 +39,20 @@ sensor:
   - platform: dallas
     address: 0x6f00000f057d5028
     name: "Water Temperature"
+    unit_of_measurement: "°C"
+    icon: "mdi:pool-thermometer"
 
   - platform: dallas
     address: 0x7400000f05586428
     name: "Air Temperature"
+    unit_of_measurement: "°C"
+    icon: "mdi:sun-thermometer"
 
   - platform: adc
     id: battery_voltage
     name: "Battery Voltage"
+    icon: "mdi:battery-50"
+    unit_of_measurement: "V"
     pin: A0
     update_interval: 60s
     filters:
@@ -83,6 +89,7 @@ binary_sensor:
       inverted: true
     filters:
       - delayed_on_off: 1s
+    icon: "mdi:battery-charging"
 
   - platform: gpio
     name: "Input Voltage Good"
@@ -91,11 +98,12 @@ binary_sensor:
       inverted: true
     filters:
       - delayed_on_off: 1s
+    icon: "mdi:solar-power-variant"
 
-  - platform: homeassistant
+text_sensor:
+  - platform: mqtt_subscribe
     id: prevent_deep_sleep
-    name: Prevent Deep Sleep
-    entity_id: input_boolean.prevent_deep_sleep
+    topic: homeassistant/input_boolean/prevent_deep_sleep/state
 
 output:
   - id: red_led
@@ -114,29 +122,22 @@ interval:
       - output.turn_on: blue_led
       - delay: .5s
       - output.turn_off: blue_led
-      - logger.log: "Considering nap"
+      - logger.log: 
+          format: "Considering nap: MQTT %d, Prevent %s, %.2fV"
+          args: [ 'mqtt_mqttclientcomponent->is_connected()', 'id(prevent_deep_sleep).state.c_str()', 'id(battery_voltage).state' ]
       - if:
           condition:
-            api.connected:
+            and:
+              - mqtt.connected:
+              - text_sensor.state:
+                  id: prevent_deep_sleep
+                  state: "off"
+              - sensor.in_range:
+                  id: battery_voltage
+                  below: 4.0
           else:
-            - logger.log: "No Nap: Not connected to API"
+            - logger.log: "No Nap"
             - deep_sleep.prevent: nap
           then:
-            if:
-              condition:
-                binary_sensor.is_off: prevent_deep_sleep
-              else:
-                - logger.log: "No Nap: Prevent Deep Sleep is on"
-                - deep_sleep.prevent: nap
-              then:
-                if:
-                  condition:
-                    sensor.in_range:
-                      id: battery_voltage
-                      below: 4.0
-                  else:
-                    - logger.log: "No Nap: Battery Charging"
-                    - deep_sleep.prevent: nap
-                  then:
-                    - logger.log: "Nap Allowed"
-                    - deep_sleep.allow: nap
+            - logger.log: "Nap Allowed"
+            - deep_sleep.allow: nap
