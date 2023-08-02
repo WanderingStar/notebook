@@ -13,7 +13,7 @@ logger:
 deep_sleep:
   id: nap
   run_duration: 15s
-  sleep_duration: 285s
+  sleep_duration: 40 s
 
 mqtt:
   broker: 192.168.86.250
@@ -63,12 +63,12 @@ sensor:
     on_value_range:
       - below: 3.0
         then:
-          - logger.log: "Critically Low Battery"
+          - logger.log: "Low Battery"
           - output.set_level:
               id: blue_led
               level: 20%
       - above: 3.0
-        below: 4.0
+        below: 3.7
         then:
           - logger.log: "Battery Normal"
           - output.turn_off: red_led
@@ -105,6 +105,12 @@ text_sensor:
     id: prevent_deep_sleep
     topic: homeassistant/input_boolean/prevent_deep_sleep/state
 
+  - platform: template
+    name: "Somnolence"
+    id: somnolence
+    icon: "mdi:sleep"
+    retain: true
+
 output:
   - id: red_led
     platform: esp8266_pwm
@@ -117,7 +123,7 @@ output:
     inverted: True
 
 interval:
-  - interval: 5s
+  - interval: 15s
     then:
       - output.turn_on: blue_led
       - delay: .5s
@@ -132,12 +138,30 @@ interval:
               - text_sensor.state:
                   id: prevent_deep_sleep
                   state: "off"
-              - sensor.in_range:
-                  id: battery_voltage
-                  below: 4.0
           else:
-            - logger.log: "No Nap"
+            - text_sensor.template.publish:
+                id: somnolence
+                state: "Awake"
             - deep_sleep.prevent: nap
           then:
-            - logger.log: "Nap Allowed"
-            - deep_sleep.allow: nap
+            if:
+              condition:
+                - sensor.in_range:
+                    id: battery_voltage
+                    above: 3.7
+              then:
+                - text_sensor.template.publish:
+                    id: somnolence
+                    state: "Short"
+                - delay: 1s
+                - deep_sleep.enter:
+                    id: nap
+                    sleep_duration: 44s
+              else:
+                - text_sensor.template.publish:
+                    id: somnolence
+                    state: "Long"
+                - delay: 1s
+                - deep_sleep.enter:
+                    id: nap
+                    sleep_duration: 284s
