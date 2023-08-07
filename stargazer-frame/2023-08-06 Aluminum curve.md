@@ -1,4 +1,4 @@
-Just kidding. That [Pin Bender](2023-07-29 Pin Bender.md)? Totally not necessary. I got some 1/8" x 3/4" aluminum bar (12' lengths, cut in half) and it easily bends to the curve of the trailer.
+Just kidding. That [Pin Bender](2023-07-29%20Pin%20Bender.md)? Totally not necessary. I got some 1/8" x 3/4" aluminum bar (12' lengths, cut in half) and it easily bends to the curve of the trailer.
 
 The 3/4" width fits nicely into a groove on the back of the plastic frame, so I clamped it in place and drilled small holes for bolts to come from the back (wall) side and then drilled larger holes for the screws that mount the aluminum to the wall.
 
