@@ -16,4 +16,6 @@ Opportunities:
 
 Progress...
 1. [Welded up a really simple jig](2023-07-29%20Pin%20Bender.md)
+2. [2023-08-06 Aluminum curve](2023-08-06%20Aluminum%20curve.md)
+3. [2023-08-20 Top reinforced](2023-08-20%20Top%20reinforced.md)
 
