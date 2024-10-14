@@ -2,7 +2,7 @@
 
 2023-07-06
 
-Got a bunch of [parts](Hardware.md) from Adafruit.
+Got a bunch of [parts](notebook/esp-pool-temp/Hardware.md) from Adafruit.
 
 Tried to find a good tool to lay out the connections on a protoboard. Tried [KiCad](https://www.kicad.org/) and [Fritzing](https://fritzing.org/) and neither was remotely what I was looking for. I should have just used paper.
 
