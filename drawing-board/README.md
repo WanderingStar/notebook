@@ -18,3 +18,4 @@ Lessons learned:
 * Keep it simple.
 * A router job can be super quick.
 * The vacuum hold down system on the big router is pretty sweet if you're taking light cuts.
+* Next time, cut the whole radius for the handle, not just the small corners
