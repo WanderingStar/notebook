@@ -35,3 +35,8 @@ According to Apple’s [documentation](https://support.apple.com/en-gb/guide/sec
 There also seems to be a way to predict part of the future Bluetooth address, but this needs more investigation.
 
 Apple presumably uses authentication to stop non-Apple devices connecting to the AirTag, as connections are terminated by the AirTag shortly after connecting.
+
+### Navigation
+* [README](README.md)
+* [2023-09-24 AirTag tracking?](2023-09-24 AirTag tracking?.md)
+

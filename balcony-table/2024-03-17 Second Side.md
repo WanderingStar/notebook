@@ -17,3 +17,14 @@ Using blue tape to hold the inserts that will go in the horizontal struts seems 
 I wasn't being very careful when I selected my tubing, and the bottom tube is bowed out. I think it was that way even before I welded it. As a result, the second side is almost a quarter inch taller than the first side. I think I can put feet on the bottom or shim it to solve that problem, but it's frustrating.
 
 ![Slightly higher](https://live.staticflickr.com/65535/53594620336_fc245b3fe1_4k.jpg)
+
+### Navigation
+* [README](README.md)
+* [2024-02-10 Inspiration + Modeling](2024-02-10 Inspiration + Modeling.md)
+* [2024-02-17 Asero](2024-02-17 Asero.md)
+* [2024-02-19 Cutting](2024-02-19 Cutting.md)
+* [2024-02-24 Bolts](2024-02-24 Bolts.md)
+* [2024-03-02 Asmbly](2024-03-02 Asmbly.md)
+* [2024-03-03 Grinding, Outside Corners, Grinding](2024-03-03 Grinding, Outside Corners, Grinding.md)
+* [2024-03-17 Second Side](2024-03-17 Second Side.md)
+

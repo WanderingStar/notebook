@@ -7,3 +7,9 @@ I, of course, want to put a logo on top. I don't really want to tie up the Prusa
 Probably also smart to print just the thread, to make sure it works, since this is my first time making a thread:
 
 ![](Pasted%20image%2020241128121310.png)
+
+### Navigation
+* [README](README.md)
+* [2024-11-28 Basic Modeling](2024-11-28 Basic Modeling.md)
+* [2024-11-29 Thinking about printing](2024-11-29 Thinking about printing.md)
+

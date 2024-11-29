@@ -29,3 +29,11 @@ However, the top is still warped. This lets light in, and will probably let bugs
 ![Gap at top](https://live.staticflickr.com/65535/53098188567_7e796aaac9_c.jpg)
 
 I think that aluminum will work fine to stiffen the top as well, and I'm not even sure I'll need to screw the bar into the wall, which would make installation much, much simpler. I think the screen assembly slides into a groove like the fuzzy piece in the sides. But that's a project for another weekend.
+
+
+### Navigation
+* [README](README.md)
+* [2023-07-29 Pin Bender](2023-07-29 Pin Bender.md)
+* [2023-08-06 Aluminum curve](2023-08-06 Aluminum curve.md)
+* [2023-08-20 Top reinforced](2023-08-20 Top reinforced.md)
+

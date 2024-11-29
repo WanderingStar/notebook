@@ -15,3 +15,8 @@
 - [Weatherproof Enclosure](https://www.adafruit.com/product/903)
 - [Featherwing Proto board](https://www.adafruit.com/product/2884)
 - [Sugru](https://sugru.com/what-is-sugru)
+
+### Navigation
+* [README](README.md)
+* [Hardware](Hardware.md)
+

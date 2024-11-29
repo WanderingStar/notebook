@@ -6,3 +6,9 @@ That gave me a model that looks like this for the base:
 
 And this for the cover:
 ![](Pasted%20image%2020241128120218.png)
+
+### Navigation
+* [README](README.md)
+* [2024-11-28 Basic Modeling](2024-11-28 Basic Modeling.md)
+* [2024-11-29 Thinking about printing](2024-11-29 Thinking about printing.md)
+

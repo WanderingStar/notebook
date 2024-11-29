@@ -9,3 +9,10 @@ But...
 Will it bend? I don't actually have any aluminum bar to test it with, sadly. The metal shop that's open on Saturdays only sells mild steel.
 
 Stay tuned!
+
+### Navigation
+* [README](README.md)
+* [2023-07-29 Pin Bender](2023-07-29 Pin Bender.md)
+* [2023-08-06 Aluminum curve](2023-08-06 Aluminum curve.md)
+* [2023-08-20 Top reinforced](2023-08-20 Top reinforced.md)
+

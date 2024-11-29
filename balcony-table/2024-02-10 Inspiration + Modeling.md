@@ -8,3 +8,14 @@ The inspiration image looks like it's a size I can't get in rectangular tube at 
 I wrestled my way through modeling this in Fusion 360. Getting a distinctly non-right angle was a little tricky. I think the inspiration table may be pretty short for its width, because any angle more than 100 degrees at the base starts getting narrower than looks safe.
 
 ![](isometric2in.png)
+
+### Navigation
+* [README](README.md)
+* [2024-02-10 Inspiration + Modeling](2024-02-10 Inspiration + Modeling.md)
+* [2024-02-17 Asero](2024-02-17 Asero.md)
+* [2024-02-19 Cutting](2024-02-19 Cutting.md)
+* [2024-02-24 Bolts](2024-02-24 Bolts.md)
+* [2024-03-02 Asmbly](2024-03-02 Asmbly.md)
+* [2024-03-03 Grinding, Outside Corners, Grinding](2024-03-03 Grinding, Outside Corners, Grinding.md)
+* [2024-03-17 Second Side](2024-03-17 Second Side.md)
+

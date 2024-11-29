@@ -7,3 +7,14 @@ Blending with flap discs seems like the best way to blend the roughed corners th
 I'm going to have to figure out how to blend corners to match the filet on the rectangular tube. They're much too sharp now.
 
 ![](https://live.staticflickr.com/65535/53568567613_7d7cafa935_4k.jpg)
+
+### Navigation
+* [README](README.md)
+* [2024-02-10 Inspiration + Modeling](2024-02-10 Inspiration + Modeling.md)
+* [2024-02-17 Asero](2024-02-17 Asero.md)
+* [2024-02-19 Cutting](2024-02-19 Cutting.md)
+* [2024-02-24 Bolts](2024-02-24 Bolts.md)
+* [2024-03-02 Asmbly](2024-03-02 Asmbly.md)
+* [2024-03-03 Grinding, Outside Corners, Grinding](2024-03-03 Grinding, Outside Corners, Grinding.md)
+* [2024-03-17 Second Side](2024-03-17 Second Side.md)
+
