@@ -8,6 +8,6 @@ I found a bunch of models online that are *almost* what I want, but not quite. S
 
 ### Navigation
 * [README](README.md)
-* [2024-11-28 Basic Modeling](2024-11-28 Basic Modeling.md)
-* [2024-11-29 Thinking about printing](2024-11-29 Thinking about printing.md)
+* [2024-11-28 Basic Modeling](2024-11-28%20Basic%20Modeling.md)
+* [2024-11-29 Thinking about printing](2024-11-29%20Thinking%20about%20printing.md)
 

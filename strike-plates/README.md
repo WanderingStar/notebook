@@ -6,5 +6,5 @@ What if we made them?
 
 ### Navigation
 * [README](README.md)
-* [2024-11-27 Modeling](2024-11-27 Modeling.md)
+* [2024-11-27 Modeling](2024-11-27%20Modeling.md)
 

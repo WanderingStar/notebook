@@ -2,9 +2,7 @@ I'm running a minicomputer in my trailer (Beelink Min S12 Pro). I'd hoped to run
 
 The trailer is plugged in to shore power almost all of the time, so for now I'm using a [power pack](https://www.amazon.com/gp/product/B07H8F5HYJ) plugged in to 120V that can keep the computer running while we drive to a campsite.
 
-* [2023-11-19 Notes](2023-11-19%20Notes.md)
-
 ### Navigation
 * [README](README.md)
-* [2023-11-19 Notes](2023-11-19 Notes.md)
+* [2023-11-19 Notes](2023-11-19%20Notes.md)
 
