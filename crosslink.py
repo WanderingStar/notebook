@@ -1,7 +1,6 @@
 
 from os import listdir
 from os.path import isdir
-from urllib.parse import quote
 
 header = '### Navigation\n'
 
@@ -20,7 +19,7 @@ for dir in sorted([d for d in listdir('.') if isdir(d)]):
     print(f"{dir}: \n  " + "\n  ".join(files))
     navblock = header
     for file in files:
-        navblock += f"* [{file[:-3]}]({quote(file)})\n"
+        navblock += f"* [{file[:-3]}]({file.replace(' ', '%20')})\n"
     navblock += '\n'
     
     for file in files:
