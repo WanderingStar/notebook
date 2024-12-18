@@ -1,8 +1,7 @@
 ---
 tags:
 ---
-This worked out quite well. I posted my first Thing: [Fetching Title#gb1g](https://www.thingiverse.com/thing:6875139)
-
+This worked out quite well. I posted my first [Thing](https://www.thingiverse.com/thing:6875139)
 ### Navigation
 * [README](README.md)
 * [2024-11-28 Basic Modeling](2024-11-28%20Basic%20Modeling.md)

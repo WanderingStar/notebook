@@ -2,10 +2,10 @@ The major thing that I didn't already know how to do was creating the threads. T
 
 That gave me a model that looks like this for the base:
 
-![](Pasted%20image%2020241128120105.png)
+![](attachments/Pasted%20image%2020241128120105.png)
 
 And this for the cover:
-![](Pasted%20image%2020241128120218.png)
+![](attachments/Pasted%20image%2020241128120218.png)
 
 ### Navigation
 * [README](README.md)
