@@ -18,4 +18,7 @@ I wrestled my way through modeling this in Fusion 360. Getting a distinctly non-
 * [2024-03-02 Asmbly](2024-03-02%20Asmbly.md)
 * [2024-03-03 Grinding, Outside Corners, Grinding](2024-03-03%20Grinding,%20Outside%20Corners,%20Grinding.md)
 * [2024-03-17 Second Side](2024-03-17%20Second%20Side.md)
+* [2024-11-22 Restarting](2024-11-22%20Restarting.md)
+* [2024-11-23 Holes](2024-11-23%20Holes.md)
+* [2024-11-29 Holes again](2024-11-29%20Holes%20again.md)
 
