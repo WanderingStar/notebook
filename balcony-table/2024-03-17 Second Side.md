@@ -30,4 +30,5 @@ I wasn't being very careful when I selected my tubing, and the bottom tube is bo
 * [2024-11-22 Restarting](2024-11-22%20Restarting.md)
 * [2024-11-23 Holes](2024-11-23%20Holes.md)
 * [2024-11-29 Holes again](2024-11-29%20Holes%20again.md)
+* [2024-12-17 Finished](2024-12-17%20Finished.md)
 

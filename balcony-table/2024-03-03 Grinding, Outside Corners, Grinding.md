@@ -20,4 +20,5 @@ I'm going to have to figure out how to blend corners to match the filet on the r
 * [2024-11-22 Restarting](2024-11-22%20Restarting.md)
 * [2024-11-23 Holes](2024-11-23%20Holes.md)
 * [2024-11-29 Holes again](2024-11-29%20Holes%20again.md)
+* [2024-12-17 Finished](2024-12-17%20Finished.md)
 
